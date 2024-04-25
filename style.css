@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* display: flex;
+    height: 100vh; */
+    background-image: url("./assets/img/fondo-removebg-preview.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* justify-content:center;
+    align-items: center; */
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.animacion {
+    width: 600px;
+    display: flex;
+    /* align-items: center;  */
+    display: inline-block;
+    position: relative;
+    /* left: 700px;
+    top: 440px; */
+
+}
+
+.camino {
+    position: relative;
+    
+}
+
+.ruta  {
+    position: absolute;
+    top: 190px;
+    left: 400px;
+   height: 800px;
+}
+
+.auto {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    animation: car 10s infinite;
+    left: 590px;
+    top: 410px;
+}
+
+.calle{
+display: inline-block;
+position: absolute;
+top: 580px;
+width:100%;
+
+}
+.semaforo{
+   position: absolute; 
+  top: 180px;
+  left: 100px;
+}
+.semaforo img{
+    height: 600px;
+}
+@keyframes car {
+    from {
+        width: 10px;
+        height: 10px;
+        bottom: 200px;
+        left: 940px;
+    }
+    to {
+        width: 500px;
+        height: 500px;
+        left:650px ;
+        bottom: 0px;
+       
+    }
+
+}
